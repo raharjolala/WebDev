@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel & Card Classic</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+    body {
+        background-color: #f8f7f3;
+        font-family: "Georgia", serif;
+    }
+
+    .title {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2f2f2f;
+    }
+
+    /* TABEL */
+    table {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    thead {
+        background: #2d2c2c;
+        color: white;
+    }
+    tbody tr:hover {
+        background: #f0ede6;
+    }
+body {
+    background-color: #f3f2ee;
+    font-family: "Georgia", serif;
+    padding-bottom: 50px;
+}
+
+/* Judul */
+.title {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #2c2c2c;
+    font-size: 28px;
+}
+
+/* -------------------- TABEL -------------------- */
+.table-wrapper {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #2e2d2d;
+    color: white;
+}
+
+tbody tr:hover {
+    background: #ece8dd;
+}
+
+.table td, .table th {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* -------------------- CARD -------------------- */
+.custom-card {
+    border: none;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.16);
+}
+
+.custom-card img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Isi card */
+.custom-card h5 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #3a3a3a;
+}
+
+.custom-card p {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.price {
+    color: #6b4b2f;
+    font-weight: bold;
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="container py-4">
+
+    <h2 class="title">Tabel Data</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Gemstone</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ruby Pigeon Blood</td>
+                        <td>Rp 480.000.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>Alexandrite</td>
+                        <td>Rp 33.000.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>Sapphire</td>
+                        <td>Rp 20.000.000,-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <h2 class="title">Detail Barang</h2>
+
+    <div class="row justify-content-center">
+
+        <!-- Ruby -->
+        <div class="col-md-4 mb-4">
+            <div class="custom-card">
+                <img src="https://i.pinimg.com/1200x/c7/19/c8/c719c8bad96cdb70b4d48a384aadae46.jpg" class="img-fluid">
+                <div class="p-3">
+                    <h5 class="text-center font-weight-bold">Ruby Pigeon Blood</h5>
+                    <p class="text-center">Ruby terbaik dengan warna merah intens.</p>
+                    <p class="price text-center">Price: Rp 480.000.000,-</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alexandrite -->
+        <div class="col-md-4 mb-4">
+            <div class="custom-card">
+                <img src="https://i.pinimg.com/1200x/ec/b7/55/ecb7557fa68c3942fb8d6b34b15b2506.jpg" class="img-fluid">
+                <div class="p-3">
+                    <h5 class="text-center font-weight-bold">Alexandrite</h5>
+                    <p class="text-center">Batu langka dengan perubahan warna unik.</p>
+                    <p class="price text-center">Price: Rp 33.000.000,-</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sapphire -->
+        <div class="col-md-4 mb-4">
+            <div class="custom-card">
+                <img src="https://i.pinimg.com/1200x/77/fa/c8/77fac8299f625e519122508535b69b03.jpg" class="img-fluid">
+                <div class="p-3">
+                    <h5 class="text-center font-weight-bold">Sapphire</h5>
+                    <p class="text-center">Sapphire biru elegan dengan kilau kuat.</p>
+                    <p class="price text-center">Price: Rp 20.000.000,-</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<!-- Bootstrap 4 JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>

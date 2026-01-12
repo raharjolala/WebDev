@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRR | Interactive Portfolio</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Starlight Background -->
+    <div class="starlight-bg">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        
+        <div class="floating-star">★</div>
+        <div class="floating-star" style="left: 20%; animation-delay: 3s;">☆</div>
+        <div class="floating-star" style="left: 80%; animation-delay: 6s;">★</div>
+        
+        <!-- Cloud decorations -->
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-star me-2"></i>
+                <span class="logo-text">Lala</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-code me-1"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            <i class="fas fa-cogs me-1"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link starlight-btn-nav" href="#contact">
+                            <i class="fas fa-handshake me-1"></i>Let's Talk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
+<section id="home" class="hero d-flex align-items-center">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-content">
+                    <!-- "Hello! I'm" - Made more prominent -->
+                    <div class="hello-container animate__animated animate__fadeInUp">
+                        <span class="hello-icon">👋</span>
+                        <h6 class="hero-subtitle">
+                            Hello! I'm
+                        </h6>
+                    </div>
+                    
+                    <h1 class="hero-title animate__animated animate__fadeInUp animate__delay-1s">
+                        <span class="first-name">Lailatul Robi'ah</span>
+                        <span class="last-name text-gradient">Raharjo</span>
+                    </h1>
+                    
+                    <h2 class="hero-role animate__animated animate__fadeInUp animate__delay-1s">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    
+                    <p class="hero-description mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+                        A passionate Software Engineering student who loves creating beautiful web experiences and functional applications. 
+                        I believe in learning through doing and sharing knowledge with others ✨
+                    </p>
+                    
+                    <div class="hero-stats mt-5">
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-project-diagram stat-icon"></i>
+                                    <h3>10+</h3>
+                                    <p>Projects</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-tools stat-icon"></i>
+                                    <h3>5+</h3>
+                                    <p>Technologies</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-heart stat-icon"></i>
+                                    <h3>100%</h3>
+                                    <p>Passion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons mt-5 animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="#projects" class="starlight-btn me-3">
+                            <i class="fas fa-rocket me-2"></i>View My Work
+                        </a>
+                        <a href="#contact" class="starlight-btn-outline">
+                            <i class="fas fa-paper-plane me-2"></i>Say Hello!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-section">
+                    <div class="profile-container text-center">
+                        <div class="starlight-crown"></div>
+                        <div class="profile-frame">
+                            <div class="profile-img profile-initials">
+                                <div class="initials">LR</div>
+                                <div class="profile-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating tech icons around the image -->
+                    <div class="floating-icons">
+                        <div class="floating-icon html" data-tooltip="HTML5">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="floating-icon css" data-tooltip="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="floating-icon php" data-tooltip="PHP">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="floating-icon js" data-tooltip="JavaScript">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-icon mysql" data-tooltip="MySQL">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="floating-icon figma" data-tooltip="Figma">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="floating-icon bootstrap" data-tooltip="Bootstrap">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="floating-icon github" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Background decorative elements -->
+                    <div class="decorative-elements">
+                        <div class="decorative-circle circle-1"></div>
+                        <div class="decorative-circle circle-2"></div>
+                        <div class="decorative-circle circle-3"></div>
+                        <div class="decorative-circle circle-4"></div>
+                        <div class="decorative-star star-1">★</div>
+                        <div class="decorative-star star-2">☆</div>
+                        <div class="decorative-star star-3">✦</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">
+                    <i class="fas fa-magic me-2"></i>Get to know more about my journey, skills, and passion for technology
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="starlight-card h-100" data-aos="fade-right">
+                        <div class="card-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3 class="card-title">Personal <span class="text-gradient">Profile</span></h3>
+                        <p class="card-text">
+                            Hello! I'm Lala, a Software Engineering student at SMKN 1 Probolinggo. 
+                            I'm passionate about web development and UI/UX design, and I love creating 
+                            applications that are both functional and beautiful.
+                        </p>
+                        
+                        <div class="personal-info mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-item mb-3">
+                                        <i class="fas fa-birthday-cake info-icon"></i>
+                                        <div>
+                                            <strong>Birth Date</strong>
+                                            <p>June 17, 2007</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item mb-3">
+                                        <i class="fas fa-venus info-icon"></i>
+                                        <div>
+                                            <strong>Gender</strong>
+                                            <p>Female</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item mb-3">
+                                        <i class="fas fa-home info-icon"></i>
+                                        <div>
+                                            <strong>Address</strong>
+                                            <p>JL Walkkota Gatot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item mb-3">
+                                        <i class="fas fa-envelope info-icon"></i>
+                                        <div>
+                                            <strong>Email</strong>
+                                            <p>lalaraharjo717@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item mb-3">
+                                        <i class="fas fa-phone info-icon"></i>
+                                        <div>
+                                            <strong>Phone</strong>
+                                            <p>+62 856-0635-3734</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item mb-3">
+                                        <i class="fas fa-school info-icon"></i>
+                                        <div>
+                                            <strong>School</strong>
+                                            <p>SMKN 1 Probolinggo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="starlight-card h-100" data-aos="fade-left">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="card-title">Technical <span class="text-gradient">Skills</span></h3>
+                        
+                        <div class="skill-meter">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-html5"></i> HTML & CSS
+                                </span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar" data-width="75"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-meter">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-php"></i> PHP
+                                </span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar" data-width="75"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-meter">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fas fa-database"></i> MySQL
+                                </span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar" data-width="70"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-meter">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-figma"></i> Figma (UI/UX)
+                                </span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar" data-width="80"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-meter">
+                            <div class="skill-header">
+                                <span class="skill-name">
+                                    <i class="fab fa-js-square"></i> JavaScript
+                                </span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar" data-width="60"></div>
+                                <div class="skill-bar-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-5 projects-section">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">
+                    <i class="fas fa-sparkles me-2"></i>Some of the projects I've created during my learning journey
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="starlight-card project-card h-100" data-aos="flip-left">
+                        <div class="card-icon">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                        <h3 class="card-title">Class Cash System</h3>
+                        <p class="card-text">
+                            A web application for tracking class financial transactions with user login, 
+                            income/expense tracking, and financial reporting features.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check-circle feature-icon"></i> User Authentication</span>
+                            <span><i class="fas fa-check-circle feature-icon"></i> Financial Reports</span>
+                            <span><i class="fas fa-check-circle feature-icon"></i> Real-time Updates</span>
+                        </div>
+                        <div class="mt-4">
+                            <span class="tech-badge"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-badge"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="tech-badge"><i class="fab fa-js-square"></i> JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link mt-3">
+                            View Details <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="starlight-card project-card h-100" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="project-badge bg-success">New</div>
+                        <h3 class="card-title">Inventory Website</h3>
+                        <p class="card-text">
+                            A website for managing inventory items with data entry, categorization, 
+                            search/filter functions, and record management features.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check-circle feature-icon"></i> CRUD Operations</span>
+                            <span><i class="fas fa-check-circle feature-icon"></i> Search & Filter</span>
+                            <span><i class="fas fa-check-circle feature-icon"></i> Data Export</span>
+                        </div>
+                        <div class="mt-4">
+                            <span class="tech-badge"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-badge"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        </div>
+                        <a href="#" class="project-link mt-3">
+                            View Details <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="starlight-card project-card h-100" data-aos="flip-left" data-aos-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-badge bg-info">Design</div>
+                        <h3 class="card-title">UI/UX Designs</h3>
+                        <p class="card-text">
+                            Designed interfaces for online bookstore and product promotion pages 
+                            with focus on intuitive navigation and responsive layouts.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check-circle feature-icon"></i> Responsive Design</span>
+                            <span><i class="fas fa-check-circle feature-icon"></i> Wireframing</span>
+                            <span><i class="fas fa-check-circle feature-icon"></i> Prototyping</span>
+                        </div>
+                        <div class="mt-4">
+                            <span class="tech-badge"><i class="fab fa-figma"></i> Figma</span>
+                            <span class="tech-badge"><i class="fas fa-paint-brush"></i> UI Design</span>
+                            <span class="tech-badge"><i class="fas fa-user-friends"></i> UX Design</span>
+                        </div>
+                        <a href="#" class="project-link mt-3">
+                            View Details <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Additional <span class="text-gradient">Skills</span></h2>
+                <p class="section-subtitle">
+                    <i class="fas fa-graduation-cap me-2"></i>Soft skills and supporting abilities that complement my technical expertise
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="starlight-card skill-card text-center h-100" data-aos="zoom-in">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="card-title">Software <span class="text-gradient">Tools</span></h3>
+                        <p class="card-text">
+                            Proficient in Microsoft Office Suite, Canva for graphic design, 
+                            CapCut for video editing, and various productivity tools.
+                        </p>
+                        <div class="skill-tags mt-3">
+                            <span class="skill-tag"><i class="fas fa-file-word"></i> Word</span>
+                            <span class="skill-tag"><i class="fas fa-file-excel"></i> Excel</span>
+                            <span class="skill-tag"><i class="fas fa-paint-brush"></i> Canva</span>
+                            <span class="skill-tag"><i class="fas fa-video"></i> CapCut</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="starlight-card skill-card text-center h-100" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="card-title">Language <span class="text-gradient">Skills</span></h3>
+                        <p class="card-text">
+                            Fluent in Indonesian (native), intermediate English proficiency, 
+                            with strong written and verbal communication abilities.
+                        </p>
+                        <div class="language-levels mt-3">
+                            <div class="language-item">
+                                <i class="fas fa-flag"></i>
+                                <span>Indonesian</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <i class="fas fa-flag-usa"></i>
+                                <span>English</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="starlight-card skill-card text-center h-100" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Soft <span class="text-gradient">Skills</span></h3>
+                        <p class="card-text">
+                            Effective communication, teamwork, time management, 
+                            responsibility, fast learning ability, discipline, and adaptability.
+                        </p>
+                        <div class="soft-skills mt-3">
+                            <div class="soft-skill-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Communication</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Time Management</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Fast Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5 contact-section">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <p class="section-subtitle">
+                    <i class="fas fa-heart me-2"></i>Let's connect and collaborate! I'm always excited to meet new people
+                </p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-wrapper">
+                        <div class="contact-item" data-aos="fade-up">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email Address</h5>
+                                <p>lalaraharjo717@gmail.com</p>
+                                <a href="mailto:lalaraharjo717@gmail.com" class="contact-link">
+                                    Send Email <i class="fas fa-paper-plane ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone Number</h5>
+                                <p>+62 856-0635-3734</p>
+                                <a href="https://wa.me/6285606353734" class="contact-link">
+                                    Chat on WhatsApp <i class="fab fa-whatsapp ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Location</h5>
+                                <p>Probolinggo, East Java, Indonesia</p>
+                                <a href="https://maps.google.com/?q=Probolinggo" class="contact-link">
+                                    View on Map <i class="fas fa-map ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
+                        <h4 class="mb-4">Connect with me on social media!</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/6285606353734" class="social-link" data-tooltip="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="footer-content text-center" data-aos="fade-up">
+                <a href="#home" class="footer-logo">
+                    <i class="fas fa-star me-2"></i>Lala ✨
+                </a>
+                <p class="footer-text mt-4">
+                    "Even in silence, I grow. I move forward with my own pace, rising again and again, because doing my best is enough, and even in the shadows, I shine"
+                </p>
+                
+                <div class="footer-social mt-4">
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/6285606353734" class="footer-social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright mt-5">
+                    <p class="mb-2">
+                        Made with <i class="fas fa-heart heart-beat"></i> by Lailatul Robi'ah Raharjo
+                    </p>
+                    <p>© 2025 | SMKN 1 Probolinggo - Software Engineering</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
